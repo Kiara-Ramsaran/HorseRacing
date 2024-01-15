@@ -42,7 +42,7 @@ public class Race {
     public String getRaceSurface() {
         return raceSurface;
     }
-
+//change something maybe
     public void displayRaceInfo() {
         System.out.println("Race Information:");
         System.out.println("Race Surface: " + raceSurface);
@@ -61,7 +61,7 @@ public class Race {
         }
     }
 
-
+//probably don't change
     public void startRace(){
         resetHorses();
         int numSpaces = (int)(raceLength*10);
@@ -77,7 +77,7 @@ public class Race {
             HorseRacingHelper.updateTrack(numSpaces, horses);
             Horse horse = getNextHorse();
            
-
+//change ln85
             if(!horse.raceFinished() && horse.getCurrentPosition() >= numSpaces){
                 results.add(horse);
                 horse.setRaceFinished(true);
